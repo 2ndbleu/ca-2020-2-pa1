@@ -47,7 +47,7 @@ We keep the symbol values of the most frequent 8 symbols in the header of the ou
 
 | _R_ (Rank table) | _E_ (End info) | _D_ (Encoded data) | Padding   |
 |------------------|----------------|--------------------|-----------|
-| (32 bits)        | (4 bits)       | (_n_ bits )        | (0~7 bits)|
+| (32 bits)        | (4 bits)       | (_n_ bits)         | (0~7 bits)|
 
 
 The __Rank table__ records the most frequent 8 symbols in the order of their ranks. The __End info__ tells the number of bits padded in the last byte. The __Encoded data__ area has a sequence of encoded values that corresponds to the input data. The final output should be aligned to __bytes__. If the total number of bits for the header and the encoded data (i.e., 32 (_R_) + 4 (_E_) + _n_ (_D_)) is not a multiple of 8, you should pad 0's in the last byte so that the total number of bits becomes a multiple of 8.
