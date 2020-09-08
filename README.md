@@ -181,15 +181,33 @@ To download and build the skeleton code, please follow these steps:
 $ git clone https://github.com/snu-csl/ca-pa1.git
 $ cd ca-pa1
 $ make
-gcc -g -O2 -Wall  -c pa1-test.c -o pa1-test.o
-gcc -g -O2 -Wall  -c pa1.c -o pa1.o
-gcc -g -O2 -Wall  -o pa1 pa1-test.o pa1.o
+gcc -g -O2 -Wall   -c -o pa1.o pa1.c
+gcc -g -O2 -Wall   -c -o pa1-main.o pa1-main.c
+gcc -g -O2 -Wall   -c -o pa1-test.o pa1-test.c
+gcc -o pa1 pa1.o pa1-main.o pa1-test.o
 ```
 
 The result of a sample run looks like this:
 
 ```
 $ ./pa1
+-------- Test #0
+[ Data ] (char) {0xca, 0x20, 0x20}
+[Result] length == 0
+[Answer] length == 7
+[Result] encoded - (empty)
+[Answer] encoded - 02 ac 13 45 26 88 20 
+-------- WRONG!
+
+-------- Test #1
+[ Data ] (char) {0xde, 0xad, 0xbe, 0xef}
+[Result] length == 0
+[Answer] length == 8
+[Result] encoded - (empty)
+[Answer] encoded - ed ab f0 12 32 11 60 40 
+-------- WRONG!
+
+(... more test cases below ...)
 ```
 
 ## Restrictions
