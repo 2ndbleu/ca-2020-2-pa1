@@ -1,0 +1,3 @@
+/mnt/c/Users/Baptiste/OneDrive - Ecole Nationale Supérieure des Mines/Cours/SNU/Computer architecture/Projet 1 Huffman/clion huffman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Baptiste/OneDrive - Ecole Nationale Supérieure des Mines/Cours/SNU/Computer architecture/Projet 1 Huffman/clion huffman/cmake-build-debug/CMakeFiles/clion_huffman.dir
+/mnt/c/Users/Baptiste/OneDrive - Ecole Nationale Supérieure des Mines/Cours/SNU/Computer architecture/Projet 1 Huffman/clion huffman/cmake-build-debug/CMakeFiles/edit_cache.dir

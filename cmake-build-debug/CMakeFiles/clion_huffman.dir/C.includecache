@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Baptiste/OneDrive - Ecole Nationale Supérieure des Mines/Cours/SNU/Computer architecture/Projet 1 Huffman/clion huffman/pa1.c
+

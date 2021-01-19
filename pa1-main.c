@@ -106,14 +106,14 @@ int test_routine(int num, bool buffer_is_enough)
 		goto exit;
 	}
 	else
-		printf("[Answer] length == %d\n", tc[num].ans_len);
+		printf("[expected] length == %d\n", tc[num].ans_len);
 
 	/* Check output */
-	printf("[Result] encoded - ");
+	printf("[Result] encoded -   ");
 	print_buffer(output, len);
 	puts("");
 
-	printf("[Answer] encoded - ");
+	printf("[expected] encoded - ");
 	print_buffer(tc[num].ans, tc[num].ans_len);
 	puts("");
 
@@ -140,6 +140,7 @@ int main(void)
 
 	int ret = 0;
 	for (int i = 0; i < num_testcases; i++)
-		ret |= test_routine(i, true);
+        ret |= test_routine(i, true);
+//        ret |= test_routine(9, true);
 	return ret;
 }
