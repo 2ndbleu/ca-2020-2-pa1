@@ -224,7 +224,7 @@ $ ./pa1
 * In order to submit your solution, you need to register an account to the submission server at https://sys.snu.ac.kr
   * You must enter your real name & student ID
   * Wait for an approval from the TA
-* Note that the submission server is only accessible inside the SNU campus network. If you want off-campus access to the submission server, please send your IP to the TAs via email (`snucsl.ta` AT `gmail`)
+* Note that the submission server is only accessible inside the SNU campus network. If you want off-campus access to the submission server, please send your IP to the TAs via email (`snucsl.ta@gmail.com`)
 * Upload only the `pa1.c` file to the submission server
 
 ## Logistics
